@@ -1,5 +1,4 @@
 #import "@preview/fontawesome:0.6.0": *
-// #import "system.typ"
 
 #set page(
   paper: "us-letter",
