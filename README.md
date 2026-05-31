@@ -1,5 +1,6 @@
 # Simple Typst Resume
 This is my simple resume template written in Typst.
+An example output can be found [here](./resume.pdf).
 
 ## Usage
 You should first define a yaml file containing the contents of the resume. An example can be found in `./example`.
