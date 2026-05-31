@@ -1,3 +1,8 @@
+sections:
+  headline: Professional Summary
+  skills: Skills
+  experience: Experience
+  education: Education
 personal:
  firstname: John
  lastname: Doe

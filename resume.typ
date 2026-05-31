@@ -110,11 +110,11 @@
 #let profile = yaml(sys.inputs.yamlpath)
 
 #render_header(profile)
-#section[Professional Summary]
+#section[#profile.sections.headline]
 #headline(profile.personal)
-#section[Skills]
+#section[#profile.sections.skills]
 #render_skillsets(profile)
-#section[Experience]
+#section[#profile.sections.experience]
 #render_experience(profile)
-#section[Education]
+#section[#profile.sections.education]
 #render_education(profile)
