@@ -1,0 +1,82 @@
+personal:
+ firstname: John
+ lastname: Doe
+ email: johndoe@email.com
+ phone: (111) 222-333
+ location: Octane's Gauntlet, Kings Canyon
+ githubuser: jdoe
+ github: https://github.com/jdoe
+ linkedinuser: John Doe
+ linkedin: https://www.linkedin.com/in/john-doe/
+ headline: "This is John Doe's headline. Stellar Typst skills and proficient at applying AI native workflows to ANYTHING such as but not limited to: Coding, email spam, scam calls, gpu scalping, RAM scalping, etc. Bringing good and chill vibes to your company. Willing to innovate for the glory of the company and mankind (but mostly the company for that sweet sweet performance bonus). Will get along with anyone, even that one guy in the office no one wants to talk to."
+experience:
+ - company: Real big time company
+   title: Distinguished Human Paper Weight
+   start: 08/2022
+   end: present
+   location: Bonzai Plaza, Olympus
+   highlights:
+    - Promoted to Distinguished Human Paper Weight.
+    - Put self on paper for more than 37.5 hours per week.
+    - Resisted temptations of adjusting position while sitting on paper.
+    - Able to manage FAT stacks of paper.
+    - Managed tasks in JIRA and technical documentation on being a paper weight in Confluence.
+ - company: Real company
+   title: Associate programmer
+   start: 01/2018
+   end: 07/2022
+   location: Atmostation, Broken Moon
+   highlights:
+    - Programmed in many languages such as C++, D++ and E--.
+    - Refactored at least 5 lines of code at some point.
+    - Well liked around the office.
+    - Almost got promoted to mid level programmer.
+ - company: Maybe a fake company
+   title: Code Janitor
+   start: 04/2012
+   end: 01/2018
+   location: Fragment West, World's Edge
+   highlights:
+    - Pretty good at using the mop to clean up code.
+    - Janitored a LOT of code it's impossiblen to enumerate here.
+    - Collaborated with other Code Janitors and some Senior Code Janitors.
+ - company: Dead Company
+   title: Software developer
+   start: 09/2010
+   end: 04/2012
+   location: Big Maude, World's Edge
+   highlights:
+    - Developed a lot of software.
+    - Developed impressive software according to internal performance review.
+    - Company closed soon after said software was deployed.
+ - company: Super cool startup company
+   title: Junior Coffee Maker
+   start: 03/2005
+   end: 04/2012
+   location: Oasis, Storm Point
+   highlights:
+    - Made coffee.
+    - Management was mostly ok with the coffee as long as I was quick about it.
+education:
+ - school: Epic University
+   diploma: Epic Bachelor's in Software Engineering
+   start: 01/2001
+   end: 01/2005
+   location: Cenote Cave, Storm Point
+   grade: GPA - 4.0 / 4.0
+skillsets:
+ - name: Programming languages
+   skills:
+    - C++
+    - Python
+    - Typescript
+    - HTML/CSS
+ - name: Technologies
+   skills:
+    - Docker
+    - Computer
+    - Linux
+    - Git
+    - JIRA
+    - Confluence
+    - Typst
