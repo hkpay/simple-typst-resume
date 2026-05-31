@@ -8,7 +8,6 @@ You can build the resume using the following command:
 
 ```
 typst compile resume.typ example/resume.pdf --input yamlpath=example/johndoe.yaml
-
 ```
 
 or build on source changes using:
@@ -16,5 +15,4 @@ or build on source changes using:
 
 ```
 typst watch resume.typ example/resume.pdf --input yamlpath=example/johndoe.yaml
-
 ```
