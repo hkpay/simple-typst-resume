@@ -22,7 +22,7 @@
   ]
 }
 
-#let headline(personalinfo) = {
+#let render_headline(personalinfo) = {
   [ 
     #personalinfo.headline \ \ 
   ]
@@ -37,7 +37,7 @@
   ]
 }
 
-#let section(title) = [
+#let render_section_title(title) = [
   #set text( 
     size: 13pt,
     weight: "bold"
@@ -48,13 +48,13 @@
   #v(-0.6em)
 ]
 
-#let jobtitle(jobtitle) = [
+#let job_title(jobtitle) = [
   #text(weight: "bold", size: 10pt)[#jobtitle]
 ]
 
-#let jobheader(job) = {
+#let job_header(job) = {
   [
-    #jobtitle(job.title)
+    #job_title(job.title)
     #h(1fr) 
     #fa-icon("calendar") #h(0.3em) #job.start - #job.end \ 
   ]
@@ -67,7 +67,7 @@
 
 #let render_experience(profile) = {
   for (i, experience) in profile.experience.enumerate() [ 
-    #jobheader(experience) \ 
+    #job_header(experience) \ 
     #for highlight in experience.highlights [ 
       - #highlight
     ]
@@ -101,20 +101,14 @@
   [ \ ]
 }
 
-#let render_interests(profile) = {
-  for interest in profile.interests [ 
-    #interest \ 
-  ]
-}
-
 #let profile = yaml(sys.inputs.yamlpath)
 
 #render_header(profile)
 
 #for (sectionkey, sectionname) in profile.sections {
-  section[#sectionname]
+  render_section_title[#sectionname]
   if sectionkey == "headline" { 
-    headline(profile.personal)
+    render_headline(profile.personal)
   } else if sectionkey == "skills" { 
     render_skillsets(profile)
   } else if sectionkey == "experience" { 
