@@ -110,11 +110,16 @@
 #let profile = yaml(sys.inputs.yamlpath)
 
 #render_header(profile)
-#section[#profile.sections.headline]
-#headline(profile.personal)
-#section[#profile.sections.skills]
-#render_skillsets(profile)
-#section[#profile.sections.experience]
-#render_experience(profile)
-#section[#profile.sections.education]
-#render_education(profile)
+
+#for (sectionkey, sectionname) in profile.sections {
+  section[#sectionname]
+  if sectionkey == "headline" { 
+    headline(profile.personal)
+  } else if sectionkey == "skills" { 
+    render_skillsets(profile)
+  } else if sectionkey == "experience" { 
+    render_experience(profile)
+  } else if sectionkey == "education" { 
+    render_education(profile)
+  }
+}
